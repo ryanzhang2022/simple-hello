@@ -1,30 +1,14 @@
-# Use a multi-stage build to optimize the image size and security
-
-# Build stage
-FROM golang:alpine AS builder
-
-WORKDIR /app
-
-# Copy go.mod and go.sum first to leverage Docker's cache
-COPY go.mod go.sum ./
-RUN go mod download
-
-# Copy the rest of the source code
-COPY . .
-
-# Build the application
-RUN go build -o main .
-
-# Runtime stage
+# Use a lightweight base image
 FROM alpine:latest
 
+# Create a working directory
 WORKDIR /app
 
-# Copy the binary from the builder stage
-COPY --from=builder /app/main .
+# Copy the pre-built Go executable
+COPY simple-hello .
 
-# Expose the port your application runs on
-EXPOSE 8080
+# Make the executable runnable
+RUN chmod +x simple-hello
 
-# Command to run the application
-CMD ["./main"]
+# Set the command to run the executable
+ENTRYPOINT ["/app/simple-hello"]
