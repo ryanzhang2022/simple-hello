@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 //TIP To run your code, right-click the code and select <b>Run</b>. Alternatively, click
@@ -18,6 +19,13 @@ func main() {
 		// for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>. To start your debugging session,
 		// right-click your code in the editor and select the <b>Debug</b> option.
 		fmt.Println("i =", 100/i)
+	}
+
+	i := 0
+	for {
+		fmt.Println("i =", i)
+		i++
+		time.Sleep(time.Second)
 	}
 }
 
