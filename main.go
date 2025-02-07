@@ -26,12 +26,12 @@ func main() {
 		fmt.Println("i =", 100/i)
 	}
 
-	//i := 0
-	//for {
-	//	fmt.Println("i =", i)
-	//	i++
-	//	time.Sleep(time.Second)
-	//}
+	i := 0
+	for {
+		fmt.Println("current =", i)
+		i++
+		time.Sleep(5 * time.Second)
+	}
 }
 
 //TIP See GoLand help at <a href="https://www.jetbrains.com/help/go/">jetbrains.com/help/go/</a>.
