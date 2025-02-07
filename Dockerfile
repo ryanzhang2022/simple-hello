@@ -1,5 +1,5 @@
 # Use a lightweight base image
-FROM alpine:latest
+FROM cloud-boe-cn-beijing.cr.volces.com/custom_ns_1267075819788007/zxytest:zxy-alpine
 
 # Create a working directory
 WORKDIR /app
