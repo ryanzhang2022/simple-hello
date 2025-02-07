@@ -11,6 +11,11 @@ import (
 func main() {
 	//TIP Press <shortcut actionId="ShowIntentionActions"/> when your caret is at the underlined or highlighted text
 	// to see how GoLand suggests fixing it.
+
+	currentTime := time.Now()
+	currentTimeFormat := currentTime.Format("2006-01-02 15:04:05")
+	fmt.Printf("Service Started, %s\n", currentTimeFormat)
+
 	s := "gopher"
 	fmt.Printf("Hello and welcome, %s!\n", s)
 
@@ -21,12 +26,12 @@ func main() {
 		fmt.Println("i =", 100/i)
 	}
 
-	i := 0
-	for {
-		fmt.Println("i =", i)
-		i++
-		time.Sleep(time.Second)
-	}
+	//i := 0
+	//for {
+	//	fmt.Println("i =", i)
+	//	i++
+	//	time.Sleep(time.Second)
+	//}
 }
 
 //TIP See GoLand help at <a href="https://www.jetbrains.com/help/go/">jetbrains.com/help/go/</a>.
