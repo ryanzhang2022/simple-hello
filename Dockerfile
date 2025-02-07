@@ -8,4 +8,4 @@ WORKDIR /app
 COPY simple-hello .
 
 # Set the command to run the executable
-#ENTRYPOINT ["/app/simple-hello"]
+ENTRYPOINT ["/app/simple-hello"]
