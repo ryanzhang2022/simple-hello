@@ -25,13 +25,14 @@ func main() {
 		// right-click your code in the editor and select the <b>Debug</b> option.
 		fmt.Println("i =", 100/i)
 	}
+	fmt.Println("Well, I'm done.")
 
-	i := 0
-	for {
-		fmt.Println("current =", i)
-		i++
-		time.Sleep(5 * time.Second)
-	}
+	//i := 0
+	//for {
+	//	fmt.Println("current =", i)
+	//	i++
+	//	time.Sleep(5 * time.Second)
+	//}
 }
 
 //TIP See GoLand help at <a href="https://www.jetbrains.com/help/go/">jetbrains.com/help/go/</a>.
