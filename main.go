@@ -25,7 +25,7 @@ func main() {
 		// right-click your code in the editor and select the <b>Debug</b> option.
 		fmt.Println("i =", 100/i)
 	}
-	fmt.Println("Well, I'm done.")
+	fmt.Println("Well, I'm done update. v02.17")
 
 	//i := 0
 	//for {
